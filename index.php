@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/preflight.min.css" rel="stylesheet">
     <style>
     body{
-        background: linear-gradient(270deg, #8021c1, #42066b);
+        background: #0d52c7;
         margin:0px;
         padding:0px
     }
@@ -86,8 +86,8 @@ img {
     </div>
     <div class="flex text-white mt-20">
   <div class="w-full h-12 pl-3">
-  <p>Night of Bliss Special 2019 - Poster Maker</p>
-  <h6>New Media - Zone2 Christ Embasssy, Lagos Nigeria</h6>
+  <p>3 Days Easter Fire Conference 2019 - Poster Maker</p>
+  <h6>Christ Embasssy, Dallas USA</h6>
   </div>
 </div>
     <script src="main.js"></script>
