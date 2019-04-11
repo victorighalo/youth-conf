@@ -24,19 +24,19 @@ h3{
     text-align: center
 }
 #imagebg{
-    background:url('./bg1.jpeg');
+    background:url('./bg2.jpeg');
     background-size: cover;
     height: 300px;
     width: 300px;
 }
 #avatar_container{
     text-align: center;
-    width: 102px;
-    height: 105px;
+    width: 116px;
+    height: 112px;
     margin: 0 auto;
     position: relative;
-    top: 177px;
-    right: -12px;
+    top: 134px;
+    right: 22px;
 }
 img {
     max-width: 100%;
@@ -86,8 +86,8 @@ img {
     </div>
     <div class="flex text-white mt-20">
   <div class="w-full h-12 pl-3">
-  <p>3 Days Easter Fire Conference 2019 - Poster Maker</p>
-  <h6>Christ Embasssy, Dallas USA</h6>
+  <p>Youth Conference 2019 - Poster Maker</p>
+  <h6>New Media - Zone2 Christ Embasssy, Lagos Nigeria</h6>
   </div>
 </div>
     <script src="main.js"></script>
