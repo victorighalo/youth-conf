@@ -24,19 +24,19 @@ h3{
     text-align: center
 }
 #imagebg{
-    background:url('./bg.jpg');
+    background:url('./bg1.jpeg');
     background-size: cover;
     height: 300px;
     width: 300px;
 }
 #avatar_container{
     text-align: center;
-    width: 132px;
-    height: 130px;
+    width: 102px;
+    height: 105px;
     margin: 0 auto;
     position: relative;
-    top: 94px;
-    right: 15px;
+    top: 177px;
+    right: -12px;
 }
 img {
     max-width: 100%;
