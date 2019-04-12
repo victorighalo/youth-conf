@@ -15,7 +15,7 @@ html2canvas(node, {
 }).then(canvas => {
     var link = document.createElement("a");
     document.body.appendChild(link);
-    link.download = "nobs_poster.jpg";
+    link.download = "poster.jpg";
     link.href = canvas.toDataURL();
     link.target = '_blank';
     link.innerText = 'Download'

@@ -11,7 +11,9 @@ $file_tmp = $_FILES['files']['tmp_name'];
 $file_type = $_FILES['files']['type'];
 $file_size = $_FILES['files']['size'];
 $file_ext = strtolower(end(explode('.', $_FILES['files']['name'])));
-$file = $path . date('mds').'_'.$file_name;
+$file_link = date('mds').'_'.$file_name;
+$file = $path . $file_link;
+
 
 if (!in_array($file_ext, $extensions)) {
     $errors[] = 'Extension not allowed: ' . $file_name . ' ' . $file_type;
@@ -23,7 +25,7 @@ if ($file_size > 2097152) {
 if (empty($errors)) {
     move_uploaded_file($file_tmp, $file);
     header('Content-type: application/json');
-    echo(json_encode(['filename' => $file_name]));
+    echo(json_encode(['filename' => $file_link]));
 }
 
 if ($errors) print_r($errors);
