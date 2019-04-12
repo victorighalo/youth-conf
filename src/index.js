@@ -4,8 +4,10 @@ var node = document.getElementById('frame_container');
 var url = './../process.php';
 var image_avatar = document.getElementById('avatar');
 var download_container = document.getElementById('download_container');
+var blocker = document.getElementById('blocker');
 
 image_avatar.addEventListener('input', function(e){
+    blocker.classList.remove('hide');  
 var myImage = new Image();
 myImage.src = e.target.files[0];
 var formData = new FormData();
@@ -18,6 +20,7 @@ fetch(url, {
     return response.json();
   })
   .then(function(myJson) {
+    blocker.classList.add('hide');
     myImage.src = "uploads/"+myJson.filename;
     document.getElementById('avatar_container').appendChild(myImage);
 html2canvas(node, {

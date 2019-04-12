@@ -15,7 +15,7 @@
     #frame_container{
     height: 300px;
     width: 300px;
-    margin: 50px auto;
+    margin: 0 auto;
     border: 3px solid #fff;
     border-radius: 5px;
 }
@@ -52,16 +52,39 @@ img {
 #controls{
     height: auto;
     width: 300px;
-    margin: 0 auto;   
+    margin: 50px auto 0;   
     text-align:center;
     border: 15px solid #fff;
     border-radius: 5px;
     background: #fff;
 }
+.page{z-index: 900}
+#blocker{
+    z-index:1000;
+    height:100%;
+    width:100%;
+    background: gray; 
+    opacity:0.9; 
+    position: absolute;
+    text-align:center;
+    }
+    #blocker h2{
+        color:#fff;
+        margin-top:20%;        
+    }
+    .show{
+        display:block
+    }
+    .hide{
+        display:none
+    }
     </style>
      <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/utilities.min.css" rel="stylesheet">
 </head>
 <body>
+<div id="blocker" class="hide">
+<h2>Please wait...</h2>
+</div>
     <div id="frame_container" class="max-w-sm overflow-hidden shadow-lg" >
         <div id="imagebg">
         
