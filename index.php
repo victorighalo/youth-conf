@@ -24,19 +24,19 @@ h3{
     text-align: center
 }
 #imagebg{
-    background:url('./bg2.jpeg');
+    background:url('./nobs2020.jpeg');
     background-size: cover;
     height: 300px;
     width: 300px;
 }
 #avatar_container{
     text-align: center;
-    width: 116px;
-    height: 112px;
+    width: 133px;
+    height: 138px;
     margin: 0 auto;
     position: relative;
-    top: 134px;
-    right: 22px;
+    top: 60px;
+    right: 69px;
 }
 img {
     max-width: 100%;
@@ -85,7 +85,7 @@ img {
 <div id="blocker" class="hide">
 <h2>Please wait...</h2>
 </div>
-    <div id="frame_container" class="max-w-sm overflow-hidden shadow-lg" >
+    <div id="frame_container" class="max-w-sm overflow-hidden shadow-lg" style="margin-top:50px">
         <div id="imagebg">
         
         <div id="avatar_container">
@@ -102,15 +102,14 @@ img {
         class="shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker leading-tight focus:outline-none focus:shadow-outline"
         >
         <button class="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded inline-flex items-center rounded-full" id="download_container">
-  <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
-  
+
 </button>
 
     </div>
     <div class="flex text-white mt-20">
-  <div class="w-full h-12 pl-3">
-  <p>Youth Conference 2019 - Poster Maker</p>
-  <h6>New Media - Zone2 Christ Embasssy, Lagos Nigeria</h6>
+  <div class="w-full h-12 pl-3 text-center">
+  <p>Night Of Bliss Special 2020 - Poster Maker</p>
+  <h6>PMedia - Zone2 Christ Embasssy, Lagos Nigeria</h6>
   </div>
 </div>
     <script src="main.js"></script>

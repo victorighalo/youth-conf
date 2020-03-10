@@ -8,6 +8,7 @@ image_avatar.addEventListener('input', function(e){
 var myImage = new Image();
 myImage.src = e.target.files[0].name;
 
+document.getElementById('avatar_container').innerHTML = "";
 document.getElementById('avatar_container').appendChild(myImage);
 html2canvas(node, {
     allowTaint: true,
@@ -18,8 +19,9 @@ html2canvas(node, {
     link.download = "poster.jpg";
     link.href = canvas.toDataURL();
     link.target = '_blank';
-    link.innerText = 'Download'
+    link.innerText = 'Save'
     download_container.style.display = "block";
+    download_container.innerHTML = "";
     download_container.append(link)
     // link.click();
 });

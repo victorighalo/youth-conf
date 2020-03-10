@@ -22,10 +22,11 @@ fetch(url, {
   .then(function(myJson) {
     blocker.classList.add('hide');
     myImage.src = "uploads/"+myJson.filename;
+    document.getElementById('avatar_container').innerHTML = ""
     document.getElementById('avatar_container').appendChild(myImage);
 html2canvas(node, {
-    allowTaint: true,
-    foreignObjectRendering: true
+    // allowTaint: true,
+    // foreignObjectRendering: true
 }).then(canvas => {
     var link = document.createElement("a");
     document.body.appendChild(link);
@@ -34,6 +35,7 @@ html2canvas(node, {
     link.target = '_blank';
     link.innerText = 'Download'
     download_container.style.display = "block";
+    download_container.innerHTML = "";
     download_container.append(link)
     // link.click();
 });
